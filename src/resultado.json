@@ -1,0 +1,23 @@
+{
+    "alvo": "http://testphp.vulnweb.com/",
+    "data": "2025-11-14T18:21:48.292360",
+    "total_vulnerabilidades": 2,
+    "vulnerabilidades": [
+        {
+            "tipo": "csrf",
+            "severidade": "media",
+            "url": "search.php?test=query",
+            "detalhe": "Formulário POST sem token CSRF aparente"
+        },
+        {
+            "tipo": "sensitive_info",
+            "severidade": "media",
+            "url": "http://testphp.vulnweb.com/",
+            "detalhe": "E-mails expostos na página (exemplo: wvs@acunetix.com)"
+        }
+    ],
+    "nmap": {
+        "host": "testphp.vulnweb.com",
+        "error": "Nmap não encontrado. Verifique se está instalado e no PATH."
+    }
+}

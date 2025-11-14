@@ -1,0 +1,27 @@
+=== Relatório de Segurança Automatizada ===
+Alvo: https://example.com/
+Data: 2025-11-14 17:29:42.155253
+-------------------------------------------
+
+Total de vulnerabilidades encontradas: 5
+
+[FILE_INCLUSION - ALTA]
+URL: https://example.com/?file=http%3A//example.com/
+Detalhe: Possível File Inclusion detectada usando parâmetro 'file' com payload: http://example.com/
+
+[FILE_INCLUSION - ALTA]
+URL: https://example.com/?page=http%3A//example.com/
+Detalhe: Possível File Inclusion detectada usando parâmetro 'page' com payload: http://example.com/
+
+[FILE_INCLUSION - ALTA]
+URL: https://example.com/?include=http%3A//example.com/
+Detalhe: Possível File Inclusion detectada usando parâmetro 'include' com payload: http://example.com/
+
+[FILE_INCLUSION - ALTA]
+URL: https://example.com/?inc=http%3A//example.com/
+Detalhe: Possível File Inclusion detectada usando parâmetro 'inc' com payload: http://example.com/
+
+[FILE_INCLUSION - ALTA]
+URL: https://example.com/?template=http%3A//example.com/
+Detalhe: Possível File Inclusion detectada usando parâmetro 'template' com payload: http://example.com/
+
